@@ -1,0 +1,21 @@
+{
+  "name": "ilyrics-core",
+  "version": "1.0.0",
+  "description": "The base of the iLyrics CLI. Can be used in your application (MacOS only for now)",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "author": "github.com/Mondonno",
+  "license": "MIT",
+  "dependencies": {
+    "applescript": "^1.0.0",
+    "cheerio": "^1.0.0-rc.5",
+    "file-metadata": "^1.0.0",
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7",
+    "unidecode": "^0.1.8"
+  },
+  "types": "./src/typings/index.d.ts"
+}
