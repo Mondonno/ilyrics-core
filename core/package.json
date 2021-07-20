@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ."
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mondonno/ilyrics-core"
+  },
   "author": "github.com/Mondonno",
   "license": "MIT",
   "dependencies": {
@@ -17,5 +21,15 @@
     "path": "^0.12.7",
     "unidecode": "^0.1.8"
   },
+  "keywords": [
+    "ilyrics-core",
+    "ilyrics",
+    "macos",
+    "linux",
+    "lyrics",
+    "music",
+    "swag",
+    "apple"
+  ],
   "types": "./src/typings/index.d.ts"
 }
