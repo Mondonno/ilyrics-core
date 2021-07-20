@@ -5,6 +5,8 @@ This package is created for [iLyrics](https://github.com/Mondonno/iLyrics) proje
 
 # Usage
 How to download data? So easy!
+
+*Currently the options in the ilyrics class are unavaible*
 ```js
 const { iLyricsLib } = require("ilyrics-core");
 const ilCore = new iLyricsLib({
@@ -37,3 +39,6 @@ Players are sorted by the data pioritity.
 - Quick Time Player `(3)`
 
 # Todo
+
+- Add support for Windows and Linux platforms
+- Add support for the iLyricsLib options
