@@ -7,20 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ."
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Mondonno/ilyrics-core"
-  },
-  "author": "github.com/Mondonno",
+  "author": "Mondonno",
   "license": "MIT",
   "dependencies": {
     "applescript": "^1.0.0",
-    "cheerio": "^1.0.0-rc.5",
-    "file-metadata": "^1.0.0",
+    "cheerio": "^1.0.0-rc.10",
+    "file-metadata": "1.0.0",
     "node-fetch": "^2.6.1",
     "path": "^0.12.7",
     "unidecode": "^0.1.8"
   },
+  "repository": "git://github.com/Mondonno/ilyrics-core.git",
   "keywords": [
     "ilyrics-core",
     "ilyrics",
