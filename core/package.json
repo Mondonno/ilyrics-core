@@ -1,6 +1,6 @@
 {
   "name": "ilyrics-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The base of the iLyrics CLI. Can be used in your application (MacOS only for now)",
   "main": "./src/index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "path": "^0.12.7",
     "unidecode": "^0.1.8"
   },
+  "readme": "https://github.com/Mondonno/ilyrics-core#readme",
   "repository": "git://github.com/Mondonno/ilyrics-core.git",
   "keywords": [
     "ilyrics-core",
