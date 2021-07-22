@@ -42,3 +42,5 @@ Players are sorted by the data pioritity.
 
 - Add support for Windows and Linux platforms
 - Add support for the iLyricsLib options
+
+#### [Available on NPM](https://www.npmjs.com/package/ilyrics-core)
