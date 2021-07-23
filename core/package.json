@@ -31,8 +31,5 @@
     "swag",
     "apple"
   ],
-  "types": "./src/typings/index.d.ts",
-  "files": [
-    "../README.md"
-  ]
+  "types": "./src/typings/index.d.ts"
 }
