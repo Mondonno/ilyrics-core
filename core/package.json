@@ -1,6 +1,6 @@
 {
   "name": "ilyrics-core",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The base of the iLyrics CLI. Can be used in your application (MacOS only for now)",
   "main": "./src/index.js",
   "scripts": {

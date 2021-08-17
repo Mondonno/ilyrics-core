@@ -1,4 +1,5 @@
 const { NoEnoughAttributes, MusicGetReapeted } = require("./modules/util/Errors");
+const { identifyMusicMetadata } = require("./modules/util/DataResolver")
 const MacOS = require("./modules/system/Mac");
 const LyricsInterface = require("./modules/helpers/ILyricsInterface");
 
@@ -107,7 +108,8 @@ class iLyricsLib {
             this.updateCurrentSong(null);
             return;
         }
-        if (convertedMusicData && (this.lastCachedSong ? convertedMusicData.musicName === this.lastCachedSong.details.name : false)) {
+
+        if (identifyMusicMetadata(convertedMusicData, this.lastCachedSong)) {
             throw new MusicGetReapeted();
         }
 
