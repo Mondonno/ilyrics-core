@@ -1,13 +1,13 @@
-let decoder = require('unidecode');
+const decoder = require('unidecode');
 
-let unidecoder = string => {
+const unidecoder = string => {
     if (typeof string === "number") string = new String(string).toString();
     if (typeof string !== "string") throw new Error("Can not validate non string");
 
     return decoder(string).toString();
 };
 
-let groupMatch = match => {
+const groupMatch = match => {
     if (!match) return undefined;
 
     let matches = new Array();
@@ -27,15 +27,15 @@ let groupMatch = match => {
     };
 }
 
-let strip = string => string && typeof string === "string" ? string.trim() : string
-let toString = (string = new String().toString()) => new String(string).toString()
+const strip = string => string && typeof string === "string" ? string.trim() : string
+const toString = (string = new String().toString()) => new String(string).toString()
 
 // Credits to SwagLyrics for regexes
-let brc = /([(\[](feat|ft|From "[^"]*")[^)\]]*[)\]]|- .*)/gi // Matches braces with feat included or text after -, also adds support for Bollywood songs by matching (From "<words>")
-let aln = /[^ \-a-zA-Z0-9]+/g // Matches non space or - or alphanumeric characters
-let spc = / *- *| +/g // Matches one or more spaces
-let wth = /(?: *\(with )([^)]+)\)/ // Capture text after with
-let nlt = /[^\x00-\x7F\x80-\xFF\u0100-\u017F\u0180-\u024F\u1E00-\u1EFF]/g // Match only latin characters
+const brc = /([(\[](feat|ft|From "[^"]*")[^)\]]*[)\]]|- .*)/gi // Matches braces with feat included or text after -, also adds support for Bollywood songs by matching (From "<words>")
+const aln = /[^ \-a-zA-Z0-9]+/g // Matches non space or - or alphanumeric characters
+const spc = / *- *| +/g // Matches one or more spaces
+const wth = /(?: *\(with )([^)]+)\)/ // Capture text after with
+const nlt = /[^\x00-\x7F\x80-\xFF\u0100-\u017F\u0180-\u024F\u1E00-\u1EFF]/g // Match only latin characters
 
 function urlCustomizer(song, artist) {
     if (!song || !artist) throw new Error("The song or artist is empty or undefinded.");
