@@ -8,9 +8,6 @@ function resolveMetadata(metaData) {
     let requiredProps = ["title", "displayName", "fsName", "album", "authors", "composer"];
 
     for (const key in metaData) metaData.hasOwnProperty(key) ? keys.push(key) : null;
-    let types = keys.hasOwnProperty("mediaTypes") ? (metaData.mediaTypes.includes("Sound") ? true : false) : false
-
-    if (types) return null;
     for (const prop of requiredProps)
         keys.includes(prop.toString()) ? null : metaData[prop] = new String().toString();
 
