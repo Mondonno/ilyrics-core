@@ -1,11 +1,13 @@
 # ILyrics Core
 
+[![NPM](https://nodei.co/npm/ilyrics-core.png?downloads=true)](https://www.npmjs.com/package/ilyrics-core)
+
 Ilyrics core is the module to check the current playing music on the user computer via the system preffered scripts.
 The usage of this is for example, if you need the acces and providing the types for the current playing music.
 This package is created for [iLyrics](https://github.com/Mondonno/iLyrics) project wich helps you to find the lyrics for the current playing song.
 
 # Usage
-How to download data? So easy!
+Process of downloading data is very easy as shown below.
 
 *Currently the options in the ilyrics class are unavaible*
 ```js
